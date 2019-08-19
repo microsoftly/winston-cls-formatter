@@ -1,0 +1,40 @@
+{
+  "name": "winston-cls-formatter",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "description": "Formatter that binds CLS (continuation local storage) to metadata",
+  "keywords": [
+    "logging",
+    "winston",
+    "cls",
+    "express",
+    "monitoring",
+    "tracing"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ./dist",
+    "rebuild": "yarn clean && yarn build",
+    "lint": "node_modules/.bin/tslint src/**/*.ts",
+    "test": "./node_modules/mocha/bin/mocha --require ts-node/register test/**/*.spec.ts",
+    "test:debug": "./node_modules/mocha/bin/mocha --require ts-node/register --inspect test/**/*.spec.ts",
+    "buildTypeDocs": "yarn rebuild && rm -rf docs && ./node_modules/.bin/typedoc --excludeNotExported --out docs --hideGenerator src/index.ts --module commonjs --gaID UA-145937705-1 --readme none && touch docs/.nojekyll"
+  },
+  "dependencies": {
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.0",
+    "@types/cls-hooked": "^4.3.0",
+    "@types/mocha": "^5.2.7",
+    "@types/typescript": "^2.0.0",
+    "chai": "^4.2.0",
+    "cls-hooked": "^4.2.2",
+    "mocha": "^6.2.0",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^8.3.0",
+    "typedoc": "^0.15.0",
+    "winston-transport": "^4.3.0"
+  }
+}
