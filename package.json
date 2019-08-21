@@ -1,6 +1,6 @@
 {
   "name": "winston-cls-formatter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "license": "MIT",
   "description": "Formatter that binds CLS (continuation local storage) to metadata",
