@@ -1,7 +1,7 @@
 [![codecov](https://codecov.io/gh/microsoftly/winston-cls-formatter/branch/master/graph/badge.svg)](https://codecov.io/gh/microsoftly/winston-cls-formatter) [![CircleCI](https://circleci.com/gh/microsoftly/winston-cls-formatter/tree/master.svg?style=svg)](https://circleci.com/gh/microsoftly/winston-cls-formatter/tree/master)
 # winston-cls-formatter
 ## Install
-`npm i winston-cli-formatter`
+`npm i winston-cls-formatter`
 ## Quickstart
 ```nodejs
 const winston = require('winston');
