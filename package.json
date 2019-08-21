@@ -20,7 +20,8 @@
     "test": "./node_modules/mocha/bin/mocha --require ts-node/register test/**/*.spec.ts",
     "test:debug": "./node_modules/mocha/bin/mocha --require ts-node/register --inspect test/**/*.spec.ts",
     "buildTypeDocs": "yarn rebuild && rm -rf docs && ./node_modules/.bin/typedoc --excludeNotExported --out docs --hideGenerator src/index.ts --module commonjs --gaID UA-145937705-1 --readme none && touch docs/.nojekyll",
-    "coverage": "rm -rf coverage && ./node_modules/.bin/nyc report ./node_modules/mocha/bin/mocha --require ts-node/register test/**/*.spec.ts > coverage/coverage.json"
+    "coverage": "rm -rf coverage && nyc yarn test",
+    "ci": "yarn lint && yarn coverage && ./node_modules/.bin/codecov -f coverage/coverage-final.json"
   },
   "dependencies": {
     "winston": "^3.2.1"
