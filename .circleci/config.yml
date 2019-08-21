@@ -21,8 +21,8 @@ jobs:
           paths:
             - node_modules/
       - run:
-          name: coverage tests
-          command: yarn coverage
+          name: All CI steps at once
+          command: yarn ci
       - store_test_results:
           path: coverage
       - store_artifacts:
