@@ -1,0 +1,16 @@
+{
+    "extends": "@istanbuljs/nyc-config-typescript",
+    "all": true,
+    "check-coverage": true,
+    "include": [
+      "src"
+    ],
+    "reporter": [
+      "json"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "sourceMap": true,
+    "instrument": true
+}
