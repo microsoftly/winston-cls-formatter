@@ -13,6 +13,9 @@ jobs:
             - yarn-packages-master
             - yarn-packages-
       - run:
+          name: install fossa
+          command: "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash"
+      - run:
           name: yarn install
           command: yarn
       - save_cache:
@@ -23,6 +26,14 @@ jobs:
       - run:
           name: All CI steps at once
           command: yarn ci
+      - run:
+          name: Run FOSSA analysis
+          command: |
+            fossa analyze
+      - run:
+          name: Run FOSSA license check
+          command: |
+            fossa test
       - store_test_results:
           path: coverage
       - store_artifacts:

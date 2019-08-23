@@ -1,5 +1,6 @@
-[![codecov](https://codecov.io/gh/microsoftly/winston-cls-formatter/branch/master/graph/badge.svg)](https://codecov.io/gh/microsoftly/winston-cls-formatter) [![CircleCI](https://circleci.com/gh/microsoftly/winston-cls-formatter/tree/master.svg?style=svg)](https://circleci.com/gh/microsoftly/winston-cls-formatter/tree/master)
 # winston-cls-formatter
+[![codecov](https://codecov.io/gh/microsoftly/winston-cls-formatter/branch/master/graph/badge.svg)](https://codecov.io/gh/microsoftly/winston-cls-formatter) [![CircleCI](https://circleci.com/gh/microsoftly/winston-cls-formatter/tree/master.svg?style=svg)](https://circleci.com/gh/microsoftly/winston-cls-formatter/tree/master) [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B4973%2Fgithub.com%2Fmicrosoftly%2Fwinston-with-context.svg?type=shield)](https://app.fossa.com/projects/custom%2B4973%2Fgithub.com%2Fmicrosoftly%2Fwinston-with-context?ref=badge_shield)
+
 ## Install
 `npm i winston-cls-formatter`
 ## Quickstart
