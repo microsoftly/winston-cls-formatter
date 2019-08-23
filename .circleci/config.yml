@@ -23,6 +23,14 @@ jobs:
       - run:
           name: All CI steps at once
           command: yarn ci
+      - run:
+          name: Run FOSSA analysis
+          command: |
+            fossa analyze
+      - run:
+          name: Run FOSSA license check
+          command: |
+            fossa test
       - store_test_results:
           path: coverage
       - store_artifacts:
